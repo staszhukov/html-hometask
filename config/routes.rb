@@ -1,9 +1,12 @@
 Stas::Application.routes.draw do
-  get "static_pages/1"
+  get "static_pages/main"
 
-  get "static_pages/2"
+  get "static_pages/index"
 
-  get "static_pages/3"
+  get "static_pages/about"
+
+  get "static_pages/help"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -62,10 +65,5 @@ Stas::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
   
-  root :to => 'static_pages#1С # роутинг дл€ главной страницы
-	match У/asas3Ф => Уstatic_pages#3Ф
-	get "static_pages/1"
-	get "static_pages/2У
-	resources :static_pages
-	match "/patients/:id" => "patients#showУ # params[:id] в контроллере
+
 end
