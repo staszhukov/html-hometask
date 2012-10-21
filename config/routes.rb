@@ -1,4 +1,9 @@
 Stas::Application.routes.draw do
+  
+  root :to => 'static_pages#index‘ # ðîóòèíã äëÿ ãëàâíîé ñòðàíèöû
+	
+  match “/about” => “static_pages#about”
+
   get "static_pages/main"
 
   get "static_pages/index"
@@ -7,6 +12,8 @@ Stas::Application.routes.draw do
 
   get "static_pages/help"
 
+  resources :static_pages
+  match "/patients/:id" => "patients#show“
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
