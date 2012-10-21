@@ -1,4 +1,4 @@
-FirstApp1::Application.routes.draw do
+Stas::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
