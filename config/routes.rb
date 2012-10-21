@@ -63,7 +63,7 @@ Stas::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
   
   root :to => 'static_pages#1‘ # ğîóòèíã äëÿ ãëàâíîé ñòğàíèöû
-	match “/3” => “static_pages#3”
+	match “/asas3” => “static_pages#3”
 	get "static_pages/1"
 	get "static_pages/2“
 	resources :static_pages
