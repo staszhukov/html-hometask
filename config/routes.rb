@@ -2,7 +2,7 @@ Stas::Application.routes.draw do
   
   root :to => 'static_pages#index'
 	
-  match “/about” => “static_pages#about”
+  match "/about" => "static_pages#about"
 
   get "static_pages/main"
 
