@@ -61,4 +61,11 @@ Stas::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+  
+  root :to => 'static_pages#1С # роутинг дл€ главной страницы
+	match У/3Ф => Уstatic_pages#3Ф
+	get "static_pages/1"
+	get "static_pages/2У
+	resources :static_pages
+	match "/patients/:id" => "patients#showУ # params[:id] в контроллере
 end
