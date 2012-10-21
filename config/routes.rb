@@ -1,4 +1,10 @@
 Stas::Application.routes.draw do
+  get "static_pages/1"
+
+  get "static_pages/2"
+
+  get "static_pages/3"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
