@@ -13,7 +13,6 @@ Stas::Application.routes.draw do
   get "static_pages/help"
 
   resources :static_pages
-  match "/patients/:id" => "patients#show“
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
